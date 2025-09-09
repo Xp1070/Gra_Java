@@ -8,9 +8,11 @@ public class Window extends JFrame {
 
     public Window(int x, int y)
     {
-        this.setVisible(true);
-        this.setSize(75, 125);
+        this.setSize(100, 100);
         this.setLocation(x, y);
+        this.setUndecorated(true);
+        this.setVisible(true);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
     public boolean isUp() {
